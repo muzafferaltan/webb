@@ -1,0 +1,26 @@
+.resim{
+	width:85%;
+	height:510px;
+	border-style:none;
+	align:center;
+	float:left;
+	margin:1.7% 0 20px 8%;
+	
+	}
+	
+	
+.mkutu{
+	width:80%;
+	height:620px;
+	float:left;
+	padding: 0% 20px 00px 10%;
+	
+	
+	}
+
+
+.mkutu li{
+	font:20px Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:#333;
+	list-style:none;
+	}

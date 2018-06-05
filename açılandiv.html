@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>AnaSayfa</title>
+
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+
+
+
+$(".kutu2").hide();
+
+		
+
+	$(".kutu").click(function(){//classı kutu olanlardan birine tıklanırsa
+
+		var left=($(document).width()-640)/2;//pencerinin genişliğini al 640 çıkar 2 ye böl
+
+		var top=($(document).height()-480)/2;//pencerinin uzunluğunu al 480 çıkar 2 ye böl bu şekilde tam ortalama yapacaz
+
+		var resim=$(this).html();//tıklanılan objenin html içeriğini al yani resimi
+
+		$(".kutu2").css({ "left":left,"top":top });//kutu2 clasına left ve top değerlerini atadık
+
+		$(".kutu2").html(' <div class="resim"> '+resim+'</div><div class="carpi"> <img src="carpi.png"/> </div> <div class="yukleniyor"> <img src="loading.gif"/> </div> '); 
+
+		//kutu2 clasının içine aldığımız resmi -carpi resmini ve yukleniyor gifini at dedik
+
+		$(".resim img").width(640);//resmin genişliği
+
+		$(".resim img").height(480);//resmin yüksekliği
+
+		$(".resim img").hide();//resmi gize
+
+		$(".yukleniyor img").show();//yukleniyoru göster
+
+		$(".resim img").load(function(){//resim yüklenmişse
+
+			$(".resim img").show();//resmi göster
+
+			$(".yukleniyor img").hide();//yükleniyoru gizle
+
+			$(".carpi img").show();//carpiyi göster
+
+		});
+
+		$(".kutu2").slideDown(500);//kutu2 yi slide metodu ile göster dedik
+
+	});
+
+	
+
+	$(".carpi").live("click",function(){//carpiya tıklanırsa
+
+		$(".kutu2").slideUp(500);//kutu2 yi gizle
+
+	});
+
+	
+
+});
+
+</script>
+
+<style type="text/css">
+
+body{margin:auto;background-color:#5b5a5a}
+
+
+
+.ana{width:900px;margin:auto;}
+
+.kutu{width:150px;height:150px;float:left;margin-right:20px;background-color:#f1f1f1;padding:3px;padding-bottom:25px;}
+
+.kutu2{position:relative; position:absolute;width:640px;height:480px;background-color:#333;padding:5px;z-index:10;	}
+
+.carpi{width:35px;height:35px;position:absolute;top:5px;right:5px;z-index:11;}
+
+.yukleniyor{width:48px;height:48px;position:absolute;z-index:11;left:300px;top:200px;}
+
+.temiz{clear:both;}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="kutu2">
+
+	
+
+</div>
+
+<div class="ana">
+
+	<div class="kutu"> <img src="1.jpg" width="150" height="150"/> </div>
+
+	<div class="kutu"> <img src="2.jpg" width="150" height="150"/> </div>
+
+	<div class="kutu"> <img src="3.jpg" width="150" height="150" /> </div>
+
+	<div class="temiz"></div>
+
+</div>
+
+
+
+</body>
+
+</html>

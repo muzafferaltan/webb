@@ -1,0 +1,113 @@
+animate1
+{
+transition: all 0.1s;
+-webkit-transition: all 0.1s;
+}
+ 
+.action1-button
+{
+position: relative;
+padding: 10px 40px;
+margin: 0px 10px 6% 30%;
+float: left;
+border-radius: 10px;
+font-family: 'Pacifico', cursive;
+font-size: 25px;
+color: #FFF;
+text-decoration: none; 
+}
+ 
+.blue
+{
+background-color: #3498DB;
+border-bottom: 5px solid #2980B9;
+text-shadow: 0px -2px #2980B9;
+}
+ 
+.action1-button:active
+{
+transform: translate(0px,5px);
+-webkit-transform: translate(0px,5px);
+border-bottom: 1px solid;
+}
+ 
+ 
+   
+   
+   
+   
+   
+ 
+ 
+ 
+ animate2
+{
+transition: all 0.1s;
+-webkit-transition: all 0.1s;
+}
+ 
+.action2-button
+{
+position: relative;
+padding: 10px 40px;
+margin: 0px 10px 10px 0px;
+float: left;
+border-radius: 10px;
+font-family: 'Pacifico', cursive;
+font-size: 25px;
+color: #FFF;
+text-decoration: none; 
+}
+ 
+.blue
+{
+background-color: #3498DB;
+border-bottom: 5px solid #2980B9;
+text-shadow: 0px -2px #2980B9;
+}
+ 
+.action2-button:active
+{
+transform: translate(0px,5px);
+-webkit-transform: translate(0px,5px);
+border-bottom: 1px solid;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ animate3
+{
+transition: all 0.1s;
+-webkit-transition: all 0.1s;
+}
+ 
+.action3-button
+{
+position: relative;
+padding: 10px 40px;
+margin: 0px 10px 10px 0px;
+float: left;
+border-radius: 10px;
+font-family: 'Pacifico', cursive;
+font-size: 25px;
+color: #FFF;
+text-decoration: none; 
+}
+ 
+.blue
+{
+background-color: #3498DB;
+border-bottom: 5px solid #2980B9;
+text-shadow: 0px -2px #2980B9;
+}
+ 
+.action3-button:active
+{
+transform: translate(0px,5px);
+-webkit-transform: translate(0px,5px);
+border-bottom: 1px solid;
+}
+ 

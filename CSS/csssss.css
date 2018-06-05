@@ -1,0 +1,33 @@
+.sosyal{
+	float:left;
+	width:150px;
+	height:100px;
+	margin:20px 0 8px 0 ;
+	}
+	
+.sosyal ul{
+	margin:0; 
+	padding:0;
+	list-style:none;
+	}
+	
+.sosyal ul li{
+	float:left;
+	}
+	
+	
+.sosyal ul li a{
+	display:block;
+	width:30px;
+	height:10px;
+	text-decoration:none;
+	text-align:center;
+	font: 16px;
+	color:#666;
+	padding:40px 0 0 0;
+	}
+	
+.sosyal ul li a:hover{
+	color:#CCC;
+	text-decoration:underline;
+	}
